@@ -1,12 +1,16 @@
 img {
   max-width: 100%;
   max-height: 100%;
-}
 
+  border-radius: 20px;
+}
+body {
+  height: 200vh;
+}
 .galery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 20%;
 }
 .galery-block {
   height: 200px;
@@ -15,9 +19,9 @@ img {
 .blog {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 20%;
 
-  margin-top: 200px;
+  margin-top: 400px;
 }
 .blog_block {
   width: 200px;
