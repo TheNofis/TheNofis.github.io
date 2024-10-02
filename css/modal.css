@@ -1,0 +1,33 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 2000px;
+}
+.top-tp {
+  position: fixed;
+  right: 25px;
+  bottom: 150px;
+
+  padding: 20px 15px;
+  border-radius: 100px;
+
+  z-index: 100;
+
+  background-color: var(--blue1);
+  text-decoration: none;
+  color: black;
+}
+.modal {
+  position: absolute;
+  margin-left: -230px;
+  left: 50%;
+  top: 50%;
+
+  width: 500px;
+  border-radius: 15px;
+
+  text-align: center;
+
+  background-color: var(--black);
+  color: var(--white);
+}
