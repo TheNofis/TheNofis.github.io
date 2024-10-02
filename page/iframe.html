@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Iframe</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/iframe.css" />
+
+    <link
+      rel="icon"
+      href="https://avatars.githubusercontent.com/u/54182747?s=400&u=3f1c9ce484c456edec9c1a5722a0e9ea7fce0615"
+      type="image/png"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      property="og:description"
+      content="Сайт со всеми практическими по ОПИА"
+    />
+    <meta property="og:site_name" content="Все практические" />
+
+    <meta property="og:url" content="https://thenofis.github.io" />
+    <meta
+      property="og:image"
+      content="https://avatars.githubusercontent.com/u/54182747?s=400&u=3f1c9ce484c456edec9c1a5722a0e9ea7fce0615"
+    />
+
+    <meta name="robots" content="all" />
+    <title>Iframe</title>
+  </head>
+  <body>
+    <header class="header" id="top">
+      <div class="header__menu">
+        <div class="header__menu-list">
+          <div class="header__menu-item">
+            <a class="header__menu-link" href="../index.html">Главная</a>
+          </div>
+          <div class="header__menu-item">
+            <a class="header__menu-link" href="./verstka.html">Verstka</a>
+          </div>
+          <div class="header__menu-item">
+            <a class="header__menu-link" href="./grid.html">Grid</a>
+          </div>
+          <div class="header__menu-item">
+            <a class="header__menu-link" href="./modal.html">Modal</a>
+          </div>
+          <div class="header__menu-item">
+            <a class="header__menu-link" href="./grid-layout.html"
+              >Grid layout</a
+            >
+          </div>
+          <div class="header__menu-item_active">
+            <a class="header__menu-link" href="./iframe.html">Iframe</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="iframe-container">
+        <div class="iframe-block">
+          <h1>
+            <span>Моё любимое место:</span>
+          </h1>
+          <iframe
+            class="iframe"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3084.872543077398!2d91.42244952609798!3d53.717661345743544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1727888070439!5m2!1sru!2sru"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="iframe-block">
+          <h1>
+            <span>Интересное видео с YouTube:</span>
+          </h1>
+          <iframe
+            class="iframe youtube"
+            width="560"
+            height="500"
+            src="https://www.youtube.com/embed/Ki64Cnyf_cA?si=O8F7dVrHEQguDWg1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="iframe-block">
+          <h1>
+            <span>Погода в москве</span>
+          </h1>
+          <iframe
+            class="iframe pogoda"
+            src="https://www.meteoblue.com/ru/%D0%BF%D0%BE%D0%B3%D0%BE%D0%B4%D0%B0/widget/daily/%d0%9c%d0%be%d1%81%d0%ba%d0%b2%d0%b0_%d0%a0%d0%be%d1%81%d1%81%d0%b8%d1%8f_524901?geoloc=fixed&days=7&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=1&maxtemperature=1&mintemperature=1&windspeed=1&windgust=0&winddirection=1&uv=0&humidity=0&precipitation=1&precipitationprobability=1&spot=1&pressure=0&layout=light"
+            frameborder="0"
+            scrolling="NO"
+            allowtransparency="true"
+            sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
+          ></iframe>
+        </div>
+      </div>
+      <div class="sound">
+        <div class="sound-block">
+          <audio controls>
+            <source src="https://cdn.uwupad.me/10245.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span>Super footer left</span>
+      <span>Super footer right</span>
+    </footer>
+  </body>
+</html>
