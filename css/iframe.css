@@ -9,7 +9,7 @@ footer {
   width: 100%;
   bottom: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 50px 0;
 }
 h1 {
@@ -30,4 +30,21 @@ h1 {
 
   background-color: var(--black);
   color: var(--white);
+}
+audio {
+  width: 100%;
+}
+
+.stariy {
+  position: relative;
+}
+
+.stariy::after {
+  position: absolute;
+  left: -260px;
+  content: "══════════⇒";
+}
+
+video {
+  width: 100%;
 }
