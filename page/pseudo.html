@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>grid-layout</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/pseudo.css" />
+
+    <link
+      rel="icon"
+      href="https://avatars.githubusercontent.com/u/54182747?s=400&u=3f1c9ce484c456edec9c1a5722a0e9ea7fce0615"
+      type="image/png"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      property="og:description"
+      content="Сайт со всеми практическими по ОПИА"
+    />
+    <meta property="og:site_name" content="Все практические" />
+
+    <meta property="og:url" content="https://thenofis.github.io" />
+    <meta
+      property="og:image"
+      content="https://avatars.githubusercontent.com/u/54182747?s=400&u=3f1c9ce484c456edec9c1a5722a0e9ea7fce0615"
+    />
+
+    <meta name="robots" content="all" />
+    <title>Pseudo</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header" id="top">
+        <div class="header__menu">
+          <div class="header__menu-list">
+            <div class="header__menu-item">
+              <a class="header__menu-link" href="/">Главная</a>
+            </div>
+            <div class="header__menu-item">
+              <a class="header__menu-link" href="./verstka">Verstka</a>
+            </div>
+            <div class="header__menu-item">
+              <a class="header__menu-link" href="./grid">Grid</a>
+            </div>
+            <div class="header__menu-item">
+              <a class="header__menu-link" href="./modal">Modal</a>
+            </div>
+            <div class="header__menu-item">
+              <a class="header__menu-link" href="./grid-layout">Grid layout</a>
+            </div>
+            <div class="header__menu-item">
+              <a class="header__menu-link" href="./iframe">Iframe</a>
+            </div>
+            <div class="header__menu-item">
+              <a class="header__menu-link" href="./flow">Flow</a>
+            </div>
+            <div class="header__menu-item_active">
+              <a class="header__menu-link" href="./pseudo">Pseudo</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="sidebar">
+        <h1>Content (marker)</h1>
+        <ul>
+          <li>hover-active hover-after (:not) (:after)</li>
+          <li>focus-valid-invalid</li>
+          <li>nth-child</li>
+          <li>has selection</li>
+        </ul>
+      </div>
+      <main>
+        <div class="block_list">
+          <div class="block">
+            <h1 class="block_header text-underline">
+              hover-active hover-after(:not)
+            </h1>
+            <div class="block_content">
+              <button class="block_content-button">Hover</button>
+              <input class="block_content-input" />
+              <button class="block_content-button hover-after">hover me</button>
+            </div>
+          </div>
+          <div class="block">
+            <h1 class="block_header text-underline">focus-valid-invalid</h1>
+            <div class="block_content">
+              <form>
+                <input class="block_content-input" placeholder="valid" />
+                <input
+                  class="block_content-input"
+                  placeholder="invalid"
+                  required
+                />
+              </form>
+            </div>
+          </div>
+          <div class="block">
+            <h1 class="block_header text-underline">has selection</h1>
+            <div class="block_content">
+              <div class="block_content-has">
+                <span>has</span>
+                <span>example</span>
+              </div>
+              <div class="block_content-selection">
+                <span>selection</span>
+                <span>example</span>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <h1 class="block_header text-underline">nth-child</h1>
+            <div class="block_content">
+              <div class="block_content-nth">
+                <span>red (1)</span>
+                <span>green (2)</span>
+                <span>blue (3)</span>
+                <span>yellow (4)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <span>Super footer left</span>
+        <span>Super footer right</span>
+      </footer>
+    </div>
+  </body>
+</html>

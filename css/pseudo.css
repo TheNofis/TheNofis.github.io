@@ -1,0 +1,61 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  border-radius: 0 0 20px 0;
+}
+.sidebar {
+  position: sticky;
+  background-color: var(--black);
+  grid-area: sidebar;
+  min-width: 300px;
+}
+footer {
+  grid-area: footer;
+}
+main {
+  margin: 20px;
+  grid-area: content;
+  height: 150vh;
+}
+
+.block:not(:first-child) {
+  margin-top: 100px;
+}
+.block_content-has:has(> span) {
+  background-color: var(--red);
+}
+.block_content-selection > span::selection {
+  color: var(--green);
+  background-color: var(--background);
+}
+.block_content-nth > span:nth-child(1) {
+  color: var(--red);
+}
+.block_content-nth > span:nth-child(2) {
+  color: var(--green);
+}
+.block_content-nth > span:nth-child(3) {
+  color: var(--blue);
+}
+.block_content-nth > span:nth-child(4) {
+  color: var(--yellow);
+}
+
+.block_content-button {
+  position: relative;
+}
+.block_content-button:hover::after {
+  position: absolute;
+  content: "<--- you hover me";
+  right: -102%;
+  color: var(--white);
+}
