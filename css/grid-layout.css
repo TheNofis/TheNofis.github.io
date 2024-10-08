@@ -4,8 +4,14 @@ img {
 
   border-radius: 20px;
 }
-body {
-  height: 200vh;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "footer footer footer";
 }
 .galery {
   display: grid;
@@ -19,7 +25,7 @@ body {
 .blog {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20%;
+  gap: 100px;
 
   margin-top: 400px;
 }
@@ -35,6 +41,27 @@ body {
   display: flex;
   flex-direction: column;
 }
+.blog_block-body {
+  display: flex;
+  flex-direction: column;
+}
+.blog_block-header {
+  position: relative;
+}
+
+.blog_block-header > img {
+  position: relative;
+  z-index: 10;
+}
+.blog_block-header > img:hover {
+  opacity: 0;
+}
+.blog_block_header-text {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  z-index: 0;
+}
 
 .blog_block_footer {
   display: flex;
@@ -42,11 +69,17 @@ body {
 }
 .blog_block_footer-button {
   border: 0;
-  padding: 5px 30px;
+  padding: 5px 20px;
+  margin: 10px 2px;
   border-radius: 20px;
-  background-color: var(--green);
   transition: 0.5s;
   cursor: pointer;
+}
+.like {
+  background-color: var(--green);
+}
+.dislike {
+  background-color: var(--red);
 }
 .blog_block_footer-price {
   margin: auto 0;
@@ -54,4 +87,25 @@ body {
 
 .blog_block_footer-button:hover {
   opacity: 0.5;
+}
+.text-mute {
+  color: var(--white);
+  opacity: 0.5;
+}
+
+.header {
+  grid-area: header;
+  border-radius: 0 0 20px 0;
+}
+.sidebar {
+  background-color: var(--black);
+  grid-area: sidebar;
+}
+footer {
+  position: static;
+  grid-area: footer;
+}
+main {
+  margin: 20px;
+  grid-area: content;
 }
