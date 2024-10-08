@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>grid-layout</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/flow.css" />
+
+    <link
+      rel="icon"
+      href="https://avatars.githubusercontent.com/u/54182747?s=400&u=3f1c9ce484c456edec9c1a5722a0e9ea7fce0615"
+      type="image/png"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      property="og:description"
+      content="Сайт со всеми практическими по ОПИА"
+    />
+    <meta property="og:site_name" content="Все практические" />
+
+    <meta property="og:url" content="https://thenofis.github.io" />
+    <meta
+      property="og:image"
+      content="https://avatars.githubusercontent.com/u/54182747?s=400&u=3f1c9ce484c456edec9c1a5722a0e9ea7fce0615"
+    />
+
+    <meta name="robots" content="all" />
+    <title>Работа с grid и overflow</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header" id="top">
+        <div class="header__menu">
+          <div class="header__menu-list">
+            <div class="header__menu-item">
+              <a class="header__menu-link" href="/">Главная</a>
+            </div>
+            <div class="header__menu-item">
+              <a class="header__menu-link" href="./verstka">Verstka</a>
+            </div>
+            <div class="header__menu-item">
+              <a class="header__menu-link" href="./grid">Grid</a>
+            </div>
+            <div class="header__menu-item">
+              <a class="header__menu-link" href="./modal">Modal</a>
+            </div>
+            <div class="header__menu-item">
+              <a class="header__menu-link" href="./grid-layout">Grid layout</a>
+            </div>
+            <div class="header__menu-item">
+              <a class="header__menu-link" href="./iframe">Iframe</a>
+            </div>
+            <div class="header__menu-item_active">
+              <a class="header__menu-link" href="./flow">Flow</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="sidebar">
+        <h1>
+          <span>Sidebar h1</span>
+        </h1>
+      </div>
+      <main>
+        <h1 class="text-underline">pupupu</h1>
+        <div class="overflow-example">
+          <h1 class="text-underline">Overflow example</h1>
+          <div class="overflow-example__content">
+            <span
+              >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
+              voluptates, voluptatem, voluptatum, voluptatibus
+            </span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <span>Super footer left</span>
+        <span>Super footer right</span>
+      </footer>
+    </div>
+  </body>
+</html>
