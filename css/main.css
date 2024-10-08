@@ -25,7 +25,39 @@ a {
   font-weight: bold;
   font-size: 20px;
 }
+li {
+  color: var(--white);
+}
+li::marker {
+  content: "+ ";
+}
+button,
+input {
+  background-color: var(--black);
+  color: var(--white);
 
+  padding: 10px 50px;
+  border: 0;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+button:hover {
+  opacity: 0.5;
+  box-shadow: 0 0 10px var(--white);
+}
+
+input {
+  padding: 10px 10px;
+}
+button:active {
+  box-shadow: 0 0 10px var(--green);
+}
+form > input:focus {
+  box-shadow: 0 0 10px var(--white);
+}
+form > input:invalid {
+  box-shadow: 0 0 10px var(--red);
+}
 footer {
   background-color: var(--black);
   color: var(--white);
