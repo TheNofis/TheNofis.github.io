@@ -4,7 +4,7 @@
   grid-template-rows: auto;
   grid-template-areas:
     "header header header"
-    "sidebar content content"
+    "content content content"
     "footer footer footer";
 }
 
@@ -44,4 +44,27 @@ main {
 
 .overflow-example__content {
   color: var(--white);
+}
+
+form {
+  display: grid;
+  place-content: center;
+  color: var(--white);
+}
+forn > label {
+  cursor: pointer;
+}
+.form-header {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+}
+.form-content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form > * {
+  gap: 10p;
 }

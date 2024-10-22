@@ -64,31 +64,46 @@
           </div>
         </div>
       </header>
-      <div class="sidebar">
-        <h1>
-          <span>Sidebar h1</span>
-        </h1>
-      </div>
       <main>
-        <h1 class="text-underline">pupupu</h1>
-        <div class="overflow-example scroll">
-          <h1 class="text-underline">Overflow example scroll</h1>
-          <div class="overflow-example__content">
-            <span
-              >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
-              voluptates, voluptatem, voluptatum, voluptatibus
-            </span>
+        <form action="#">
+          <h1 class="text-underline form-header">Form</h1>
+          <div class="form-content">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Name" required />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              autocomplete="on"
+              required
+            />
+
+            <label for="age">Age</label>
+            <input
+              type="number"
+              id="age"
+              placeholder="Age"
+              min="18"
+              max="100"
+              value="18"
+              required
+            />
+
+            <label for="file">File</label>
+            <input type="file" id="file" />
+
+            <label for="checkbox">Checkbox</label>
+            <input type="checkbox" id="checkbox" />
+
+            <label for="radio">Radio</label>
+            <input type="radio" id="radio" />
+
+            <button type="reset">Отчистить</button>
+            <button type="submit">Отправить</button>
           </div>
-        </div>
-        <div class="overflow-example hidden">
-          <h1 class="text-underline">Overflow example hidden</h1>
-          <div class="overflow-example__content">
-            <span
-              >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
-              voluptates, voluptatem, voluptatum, voluptatibus
-            </span>
-          </div>
-        </div>
+        </form>
       </main>
       <footer>
         <span>Super footer left</span>
