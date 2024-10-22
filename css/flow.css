@@ -16,7 +16,7 @@
   position: sticky;
   background-color: var(--black);
   grid-area: sidebar;
-  min-width: 300px;
+  width: 300px;
 }
 footer {
   grid-area: footer;
@@ -24,16 +24,24 @@ footer {
 main {
   margin: 20px;
   grid-area: content;
-  height: 150vh;
+  height: 89vh;
 }
 
 .overflow-example {
-  width: 100%;
+  width: 500px;
   height: 100px;
-  overflow: scroll;
+  margin: 10px;
   border: 1px solid var(--black);
   padding: 100px 0;
 }
+.scroll {
+  overflow: scroll;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
 .overflow-example__content {
   color: var(--white);
 }
