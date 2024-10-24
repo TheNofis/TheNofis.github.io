@@ -93,12 +93,46 @@
 
             <label for="file">File</label>
             <input type="file" id="file" />
+            <label for="select">Пол</label>
+            <select name="select" id="select">
+              <option value="male">Мужской</option>
+              <option value="female">Женской</option>
+            </select>
+            <label for="range">Номер телефона</label>
+            <input
+              type="range"
+              id="range"
+              min="1"
+              max="99999999"
+              oninput="document.querySelector('label[for=range]').innerText = `Номер телефона: +${this.value}`"
+            />
+            <span>Checkbox</span>
+            <div class="form__checkbox-list">
+              <input type="checkbox" id="checkbox" />
+              <label for="checkbox">Checkbox</label>
+            </div>
+            <span>Radio</span>
+            <div class="form__radiobox-list">
+              <div class="form__radiobox">
+                <input type="radio" id="radio1" name="radio" />
+                <label for="radio1">Radio 1</label>
+              </div>
 
-            <label for="checkbox">Checkbox</label>
-            <input type="checkbox" id="checkbox" />
+              <div class="form__radiobox">
+                <input type="radio" id="radio2" name="radio" checked />
+                <label for="radio2">Radio 2</label>
+              </div>
 
-            <label for="radio">Radio</label>
-            <input type="radio" id="radio" />
+              <div class="form__radiobox">
+                <input type="radio" id="radio3" name="radio" />
+                <label for="radio3">Radio 3</label>
+              </div>
+
+              <div class="form__radiobox">
+                <input type="radio" id="radio4" name="radio" />
+                <label for="radio4">Radio 4</label>
+              </div>
+            </div>
 
             <button type="reset">Отчистить</button>
             <button type="submit">Отправить</button>

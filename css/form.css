@@ -68,3 +68,55 @@ forn > label {
 form > * {
   gap: 10p;
 }
+.form__checkbox-list {
+  display: flex;
+}
+.form__radiobox-list {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="radio"] + label::before,
+input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--black);
+  margin-right: 10px;
+  vertical-align: middle;
+  border-radius: 100%;
+}
+
+input[type="radio"]:checked + label::before,
+input[type="checkbox"]:checked + label::before {
+  background-color: var(--green);
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: var(--green);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: var(--green);
+  border: 2px solid #007acc;
+  border-radius: 50%;
+  cursor: pointer;
+}
