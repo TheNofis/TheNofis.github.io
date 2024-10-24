@@ -65,6 +65,13 @@ form > label {
   flex-direction: column;
   gap: 10px;
 }
+
 form > * {
   gap: 10p;
+}
+input:focus {
+  box-shadow: 0 0 10px var(--white);
+}
+input:invalid {
+  box-shadow: 0 0 10px var(--red);
 }
