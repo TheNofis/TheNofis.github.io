@@ -51,7 +51,7 @@ form {
   place-content: center;
   color: var(--white);
 }
-forn > label {
+form > label {
   cursor: pointer;
 }
 .form-header {
