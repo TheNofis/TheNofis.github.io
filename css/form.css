@@ -121,9 +121,9 @@ input[type="range"]::-moz-range-thumb {
   cursor: pointer;
 }
 
-form > input:focus {
+input:focus {
   box-shadow: 0 0 10px var(--white);
 }
-form > input:invalid {
+input:invalid {
   box-shadow: 0 0 10px var(--red);
 }
