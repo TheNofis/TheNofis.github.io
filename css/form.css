@@ -120,3 +120,9 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 50%;
   cursor: pointer;
 }
+input:focus:valid {
+  box-shadow: 0 0 10px var(--green);
+}
+input:focus:invalid {
+  box-shadow: 0 0 10px var(--red);
+}
