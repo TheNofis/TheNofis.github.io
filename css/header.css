@@ -6,6 +6,10 @@
 .header__menu {
   margin: 0 50px;
 }
+.header__menu-item::marker,
+.header__menu-item--active::marker {
+  content: "";
+}
 .header__menu-list {
   position: relative;
   display: flex;
@@ -13,10 +17,10 @@
   width: 100%;
 }
 
-.header__menu-item_active {
+.header__menu-item--active {
   position: relative;
 }
-.header__menu-item_active::after {
+.header__menu-item--active::after {
   content: "";
 
   position: absolute;

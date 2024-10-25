@@ -16,15 +16,17 @@ h1 {
   color: var(--white);
 }
 
-.iframe-block {
-  margin: 50px 0;
-}
-
-.iframe {
+.iframe--block-item--youtube,
+.iframe__block-item--map {
   width: 100%;
   border-radius: 20px;
 }
-.pogoda {
+
+.iframe__block {
+  margin: 50px 0;
+}
+
+.iframe--block-item--pogoda {
   width: 100%;
   height: 55vh;
 

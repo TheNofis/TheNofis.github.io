@@ -3,7 +3,7 @@ body {
   margin: 0;
   height: 2000px;
 }
-.top-tp {
+.scroll--up {
   position: fixed;
   right: 25px;
   bottom: 150px;

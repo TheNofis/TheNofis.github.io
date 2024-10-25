@@ -1,4 +1,4 @@
-.container {
+body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -27,33 +27,44 @@ main {
   height: 150vh;
 }
 
-.block:not(:first-child) {
+.block__item:not(:first-child) {
   margin-top: 100px;
 }
-.block_content-has:has(> span) {
+.block__content--has:has(> *) {
   background-color: var(--red);
 }
-.block_content-selection > span::selection {
+.block__content--selection > *::selection {
   color: var(--green);
   background-color: var(--background);
 }
-.block_content-nth > span:nth-child(1) {
+.block__content--has,
+.block__content--selection,
+.block__content--nth {
+  padding: 0;
+}
+
+.block__content-text::marker,
+.block__content--selection > *::marker,
+.block__content--has > *::marker {
+  content: "";
+}
+.block__content--nth > .block__content-text:nth-child(1) {
   color: var(--red);
 }
-.block_content-nth > span:nth-child(2) {
+.block__content--nth > .block__content-text:nth-child(2) {
   color: var(--green);
 }
-.block_content-nth > span:nth-child(3) {
-  color: var(--blue);
+.block__content--nth > .block__content-text:nth-child(3) {
+  color: var(--blue1);
 }
-.block_content-nth > span:nth-child(4) {
+.block__content--nth > .block__content-text:nth-child(4) {
   color: var(--yellow);
 }
 
-.block_content-button {
+.hover--after {
   position: relative;
 }
-.block_content-button:hover::after {
+.hover--after:hover::after {
   position: absolute;
   content: "<--- you hover me";
   right: -102%;

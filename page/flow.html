@@ -30,71 +30,36 @@
     <title>Работа с grid и overflow</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header" id="top">
-        <div class="header__menu">
-          <div class="header__menu-list">
-            <div class="header__menu-item">
-              <a class="header__menu-link" href="/">Главная</a>
-            </div>
-            <div class="header__menu-item">
-              <a class="header__menu-link" href="./verstka">Verstka</a>
-            </div>
-            <div class="header__menu-item">
-              <a class="header__menu-link" href="./grid">Grid</a>
-            </div>
-            <div class="header__menu-item">
-              <a class="header__menu-link" href="./modal">Modal</a>
-            </div>
-            <div class="header__menu-item">
-              <a class="header__menu-link" href="./grid-layout">Grid layout</a>
-            </div>
-            <div class="header__menu-item">
-              <a class="header__menu-link" href="./iframe">Iframe</a>
-            </div>
-            <div class="header__menu-item_active">
-              <a class="header__menu-link" href="./flow">Flow</a>
-            </div>
-            <div class="header__menu-item">
-              <a class="header__menu-link" href="./pseudo">Pseudo</a>
-            </div>
-
-            <div class="header__menu-item">
-              <a class="header__menu-link" href="./form">Form</a>
-            </div>
-          </div>
+    <script src="../component/header.js"></script>
+    <aside class="sidebar">
+      <h1>
+        <span>Sidebar h1</span>
+      </h1>
+    </aside>
+    <main class="container">
+      <h1 class="text-underline">pupupu</h1>
+      <div class="overflow-example scroll">
+        <h1 class="text-underline">Overflow example scroll</h1>
+        <div class="overflow-example__content">
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
+            voluptates, voluptatem, voluptatum, voluptatibus
+          </span>
         </div>
-      </header>
-      <div class="sidebar">
-        <h1>
-          <span>Sidebar h1</span>
-        </h1>
       </div>
-      <main>
-        <h1 class="text-underline">pupupu</h1>
-        <div class="overflow-example scroll">
-          <h1 class="text-underline">Overflow example scroll</h1>
-          <div class="overflow-example__content">
-            <span
-              >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
-              voluptates, voluptatem, voluptatum, voluptatibus
-            </span>
-          </div>
+      <div class="overflow-example hidden">
+        <h1 class="text-underline">Overflow example hidden</h1>
+        <div class="overflow-example__content">
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
+            voluptates, voluptatem, voluptatum, voluptatibus
+          </span>
         </div>
-        <div class="overflow-example hidden">
-          <h1 class="text-underline">Overflow example hidden</h1>
-          <div class="overflow-example__content">
-            <span
-              >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
-              voluptates, voluptatem, voluptatum, voluptatibus
-            </span>
-          </div>
-        </div>
-      </main>
-      <footer>
-        <span>Super footer left</span>
-        <span>Super footer right</span>
-      </footer>
-    </div>
+      </div>
+    </main>
+    <footer>
+      <span>Super footer left</span>
+      <span>Super footer right</span>
+    </footer>
   </body>
 </html>

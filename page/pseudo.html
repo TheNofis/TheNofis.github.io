@@ -30,104 +30,73 @@
     <title>Pseudo</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header" id="top">
-        <div class="header__menu">
-          <div class="header__menu-list">
-            <div class="header__menu-item">
-              <a class="header__menu-link" href="/">Главная</a>
-            </div>
-            <div class="header__menu-item">
-              <a class="header__menu-link" href="./verstka">Verstka</a>
-            </div>
-            <div class="header__menu-item">
-              <a class="header__menu-link" href="./grid">Grid</a>
-            </div>
-            <div class="header__menu-item">
-              <a class="header__menu-link" href="./modal">Modal</a>
-            </div>
-            <div class="header__menu-item">
-              <a class="header__menu-link" href="./grid-layout">Grid layout</a>
-            </div>
-            <div class="header__menu-item">
-              <a class="header__menu-link" href="./iframe">Iframe</a>
-            </div>
-            <div class="header__menu-item">
-              <a class="header__menu-link" href="./flow">Flow</a>
-            </div>
-            <div class="header__menu-item_active">
-              <a class="header__menu-link" href="./pseudo">Pseudo</a>
-            </div>
-            <div class="header__menu-item">
-              <a class="header__menu-link" href="./form">Form</a>
+    <script src="../component/header.js"></script>
+    <aside class="sidebar">
+      <h1 class="sidebar__title">Content (marker)</h1>
+      <ul class="sidebar__list">
+        <li class="sidebar__list-item">
+          hover-active hover-after (:not) (:after)
+        </li>
+        <li class="sidebar__list-item">focus-valid-invalid</li>
+        <li class="sidebar__list-item">nth-child</li>
+        <li class="sidebar__list-item">has selection</li>
+      </ul>
+    </aside>
+    <main class="container">
+      <div class="block__list">
+        <div class="block__item">
+          <h1 class="block__header text-underline">
+            hover-active hover-after(:not)
+          </h1>
+          <div class="block__content">
+            <button class="block__content-button">Hover</button>
+            <input class="block__content-input" />
+            <button class="block__content-button hover--after">hover me</button>
+          </div>
+        </div>
+        <div class="block__item">
+          <h1 class="block__header text-underline">focus-valid-invalid</h1>
+          <div class="block__content">
+            <form>
+              <input class="block__content-input" placeholder="valid" />
+              <input
+                class="block_content-input"
+                placeholder="invalid"
+                required
+              />
+            </form>
+          </div>
+        </div>
+        <div class="block__item">
+          <h1 class="block__header text-underline">has selection</h1>
+          <div class="block__content">
+            <ul class="block__content--has">
+              <li>has</li>
+              <li>example</li>
+            </ul>
+
+            <ul class="block__content--selection">
+              <li>selection</li>
+              <li>example</li>
+            </ul>
+          </div>
+        </div>
+        <div class="block__item">
+          <h1 class="block__header text-underline">nth-child</h1>
+          <div class="block__content">
+            <ul class="block__content--nth">
+              <li class="block__content-text">red (1)</li>
+              <li class="block__content-text">green (2)</li>
+              <li class="block__content-text">blue (3)</li>
+              <li class="block__content-text">yellow (4)</li>
             </div>
           </div>
         </div>
-      </header>
-      <div class="sidebar">
-        <h1>Content (marker)</h1>
-        <ul>
-          <li>hover-active hover-after (:not) (:after)</li>
-          <li>focus-valid-invalid</li>
-          <li>nth-child</li>
-          <li>has selection</li>
-        </ul>
       </div>
-      <main>
-        <div class="block_list">
-          <div class="block">
-            <h1 class="block_header text-underline">
-              hover-active hover-after(:not)
-            </h1>
-            <div class="block_content">
-              <button class="block_content-button">Hover</button>
-              <input class="block_content-input" />
-              <button class="block_content-button hover-after">hover me</button>
-            </div>
-          </div>
-          <div class="block">
-            <h1 class="block_header text-underline">focus-valid-invalid</h1>
-            <div class="block_content">
-              <form>
-                <input class="block_content-input" placeholder="valid" />
-                <input
-                  class="block_content-input"
-                  placeholder="invalid"
-                  required
-                />
-              </form>
-            </div>
-          </div>
-          <div class="block">
-            <h1 class="block_header text-underline">has selection</h1>
-            <div class="block_content">
-              <div class="block_content-has">
-                <span>has</span>
-                <span>example</span>
-              </div>
-              <div class="block_content-selection">
-                <span>selection</span>
-                <span>example</span>
-              </div>
-            </div>
-          </div>
-          <div class="block">
-            <h1 class="block_header text-underline">nth-child</h1>
-            <div class="block_content">
-              <div class="block_content-nth">
-                <span>red (1)</span>
-                <span>green (2)</span>
-                <span>blue (3)</span>
-                <span>yellow (4)</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-      <footer>
-        <span>Super footer left</span>
-        <span>Super footer right</span>
-      </footer>
-    </div>
+    </main>
+    <footer>
+      <span>Super footer left</span>
+      <span>Super footer right</span>
+    </footer>
   </body>
 </html>

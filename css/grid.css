@@ -1,15 +1,15 @@
-.grid-container {
+.grid__container {
   display: grid;
   grid-template-columns: repeat(3, 1);
   grid-gap: 10px;
 }
-.grid-item {
+.grid__item {
   background-color: #ccc;
   width: 100%;
   border-radius: 10px;
 }
 
-.grid-item-super {
+.grid__item--super {
   grid-column: span 3;
   grid-column-start: span 3;
 }
