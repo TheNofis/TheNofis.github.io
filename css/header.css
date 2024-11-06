@@ -105,6 +105,16 @@
 /*   --white: #abb2bf; */
 /* } */
 
+#toggle-header {
+  display: none;
+  color: var(--white);
+  position: absolute;
+  left: 20px;
+  top: 0px;
+
+  cursor: pointer;
+}
+
 @keyframes move-right {
   0% {
     left: 8px;
@@ -126,5 +136,14 @@
   }
   100% {
     left: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__menu-list {
+    flex-direction: column;
+  }
+  #toggle-header {
+    display: block;
   }
 }
