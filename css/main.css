@@ -15,7 +15,13 @@ body {
   margin: 0;
   transition: 0.5s;
 }
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
   color: var(--white);
 }
 a {
@@ -25,6 +31,11 @@ a {
   color: var(--white);
   font-weight: bold;
   font-size: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 li {
   color: var(--white);
