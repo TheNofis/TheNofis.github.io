@@ -13,6 +13,7 @@ body {
   background-color: var(--background);
   padding: 0;
   margin: 0;
+  transition: 0.5s;
 }
 h1 {
   color: var(--white);
@@ -70,6 +71,7 @@ footer {
   justify-content: space-around;
   padding: 50px 0;
   z-index: 100;
+  transition: 0.5s;
 }
 
 .text-underline {

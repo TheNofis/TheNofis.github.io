@@ -2,6 +2,7 @@
   background-color: var(--black);
   padding: 15px 0;
   border-radius: 0 0 20px 20px;
+  transition: 0.5s;
 }
 .header__menu {
   margin: 0 50px;
@@ -31,4 +32,91 @@
   height: 2px;
 
   background: var(--white);
+}
+
+.theme {
+  display: flex;
+  align-items: center;
+}
+
+.theme *,
+.theme *::before,
+.theme *::after {
+  box-sizing: border-box;
+}
+
+.theme label {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 50px 20px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  height: 20px;
+  width: 50px;
+  padding: 8px;
+  position: relative;
+  transition:
+    transform 300ms ease,
+    box-shadow 300ms ease;
+}
+
+.theme input {
+  display: none;
+}
+
+.theme label:after {
+  animation: move-left 400ms;
+  background: var(--black)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' viewBox='0 0 24 24'%3E%3Cpath stroke='#E2E2E2' fill='#E2E2E2' stroke-linecap='round' d='M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z'/%3E%3C/svg%3E")
+    no-repeat center;
+  border-radius: 12px;
+  content: "";
+  left: 8px;
+  outline: none;
+  position: absolute;
+  transition: background 100ms linear;
+  width: 15px;
+  height: 15px;
+  left: 4px;
+  top: 3px;
+}
+
+.theme input:checked + label:after {
+  animation: move-right 400ms;
+  background: var(--white);
+  left: 30px;
+}
+/* #theme-toggle:checked ~ .content { */
+/*   --background: #272a34f0; */
+/*   --black: #ffffff; */
+/*   --red: #e06c75; */
+/*   --green: #98c379; */
+/*   --yellow: #e5c07b; */
+/*   --blue1: #61afef; */
+/*   --purple: #c678dd; */
+/*   --blue2: #56b6c2; */
+/*   --white: #abb2bf; */
+/* } */
+
+@keyframes move-right {
+  0% {
+    left: 8px;
+  }
+  75% {
+    left: 35px;
+  }
+  100% {
+    left: 30px;
+  }
+}
+
+@keyframes move-left {
+  0% {
+    left: 30px;
+  }
+  75% {
+    left: 0px;
+  }
+  100% {
+    left: 4px;
+  }
 }
