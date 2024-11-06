@@ -3,6 +3,10 @@
   padding: 15px 0;
   border-radius: 0 0 20px 20px;
   transition: 0.5s;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 .header__menu {
   margin: 0 30px;
@@ -39,7 +43,8 @@
 
 .theme {
   display: flex;
-  align-items: center;
+  position: absolute;
+  right: 50px;
 }
 
 .theme *,
