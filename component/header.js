@@ -35,6 +35,9 @@ header.innerHTML = `
     <li class=${locations === "/page/form" ? "header__menu-item--active" : "header__menu-item"}>
       <a class="header__menu-link" href="/page/form">Form</a>
     </li>
+    <li class=${locations === "/page/variables" ? "header__menu-item--active" : "header__menu-item"}>
+      <a class="header__menu-link" href="/page/variables">Variables</a>
+    </li>
   </ul>
 </nav>
 <div class="theme">
