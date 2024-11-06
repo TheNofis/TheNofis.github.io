@@ -5,7 +5,7 @@
   transition: 0.5s;
 }
 .header__menu {
-  margin: 0 50px;
+  margin: 0 30px;
 }
 .header__menu-item::marker,
 .header__menu-item--active::marker {
@@ -14,7 +14,10 @@
 .header__menu-list {
   position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
   width: 100%;
 }
 

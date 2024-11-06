@@ -36,11 +36,11 @@ header.innerHTML = `
       <a class="header__menu-link" href="/page/form">Form</a>
     </li>
   </ul>
-  <div class="theme">
-    <input id="theme-toggle" type="checkbox" />
-    <label for="theme-toggle"></label>
-  </div>
 </nav>
+<div class="theme">
+  <input id="theme-toggle" type="checkbox" />
+  <label for="theme-toggle"></label>
+</div>
 `;
 
 document.body.appendChild(header);
